@@ -1,0 +1,261 @@
+/** @format */
+
+@import url(../assets/font/Montserrat/stylesheet.css);
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --charcoal: #222222;
+    --gray-light: #aaa7a7;
+
+    --font-16: 16px;
+    --font-20: 20px;
+    --font-25: 25px;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+
+    --family: 'Montserrat', sans-serif;
+
+    --size-10: 0.625rem;
+    --size-15: 0.9375rem;
+    --size-20: 1.25rem;
+    --size-30: 1.87rem;
+
+    --transition-delay-1: 0.2s;
+    --transition-delay-2: 0.3s;
+    --transition-delay-3: 0.4s;
+
+    --transition-timing: ease-in-out;
+
+    --border: 2px solid;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+*,
+body menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--charcoal);
+}
+
+.logo {
+    width: 150px;
+    height: 100px;
+}
+
+.btn {
+    padding: 12px 22px;
+    background-color: var(--white);
+    font-size: var(--font-16);
+    font-family: var(--family);
+    font-weight: var(--font-medium);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transform: all 0.5 ease-in-out;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(61, 90, 254, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: ripple 0.6s ease-in-out;
+}
+@keyframes ripple {
+    to {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-2 {
+    display: flex;
+}
+
+.font-16 {
+    font-size: var(--font-16);
+    font-family: var(--family);
+    font-weight: var(--font-normal);
+}
+.font-16-medium {
+    font-size: var(--font-16);
+    font-family: var(--family);
+    font-weight: var(--font-medium);
+}
+.font-20 {
+    font-size: var(--font-20);
+    font-weight: var(--font-normal);
+    font-family: var(--family);
+}
+.font-25-medium {
+    font-size: var(--font-25);
+    font-weight: var(--font-medium);
+    font-family: var(--family);
+}
+.font-30 {
+    font-size: 30px;
+    font-weight: var(--font-normal);
+    font-family: var(--family);
+}
+.font-70-bold {
+    font-size: 70px;
+    font-weight: var(--font-bold);
+    font-family: var(--family);
+}
+
+.white {
+    color: var(--white);
+}

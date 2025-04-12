@@ -1,0 +1,267 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Grant Hotel</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper flex">
+                    <div class="header__logo">
+                        <a class="header__logo_link" href="#">
+                            <img
+                                class="header_logo_img logo"
+                                src="../assets/image/logo.png"
+                                alt="Grant Hotel Logo"
+                            />
+                        </a>
+                    </div>
+                    <nav class="navbar" aria-label="Main Navigation">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#about"
+                                    >About</a
+                                >
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#feature"
+                                    >Feature</a
+                                >
+                            </li>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#books"
+                                    >Books</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="menu-bar" class="sendwitch">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="about" class="main fade-in-section">
+            <div class="container">
+                <div class="main__wrapper flex">
+                    <div class="main_content">
+                        <h1 class="main__title font-70-bold white">
+                            GRAND HOTEL
+                        </h1>
+                        <div class="main__left flex-2">
+                            <p class="main__text flex-2 font-30 white">
+                                <img
+                                    class="main__text-icon"
+                                    src="../assets/image/tick.svg"
+                                    alt="tick icon"
+                                />
+                                Best price.
+                            </p>
+                            <p class="main__text flex-2 font-30 white">
+                                <img
+                                    class="main__text-icon"
+                                    src="../assets/image/tick.svg"
+                                    alt="tick icon"
+                                />
+                                Instant booking.
+                            </p>
+                            <p class="main__text flex-2 font-30 white">
+                                <img
+                                    class="main__text-icon"
+                                    src="../assets/image/tick.svg"
+                                    alt="tick icon"
+                                />
+                                Excellent service.
+                            </p>
+                        </div>
+                        <p class="main__price-title font-25-medium white">
+                            Price
+                        </p>
+                        <ul class="main__price-list flex-2">
+                            <li class="main__price-item font-16">
+                                Standard Room: $100
+                            </li>
+                            <li class="main__price-item font-16">
+                                Luxury Room: $700
+                            </li>
+                            <li class="main__price-item font-16">
+                                Presidential Suite: $1500
+                            </li>
+                        </ul>
+                        <div class="main__order">
+                            <button class="btn" type="button">
+                                <span>Booking</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="main__image-wrapper">
+                        <img
+                            class="main__image"
+                            width="700"
+                            height="650"
+                            src="../assets/image/hotel.png"
+                            alt="hotel img"
+                        />
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section id="feature" class="feature flex-2 fade-in-section">
+            <div class="feature__image">
+                <img src="../assets/image/left.jpg" alt="Left building" />
+            </div>
+
+            <div class="feature-content flex-2">
+                <ul class="feature__list flex-2">
+                    <li class="feature__item flex-2">
+                        <p class="feature__text font-20 white">
+                            Prime central location<br />
+                            Situated near business centers, restaurants, and
+                            major attractions.
+                        </p>
+                    </li>
+                    <li class="feature__item flex-2">
+                        <p class="feature__text font-20 white">
+                            Modern and comfortable rooms<br />
+                            Equipped with climate control, Wi-Fi, and panoramic
+                            windows.
+                        </p>
+                    </li>
+                    <li class="feature__item flex-2">
+                        <p class="feature__text font-20 white">
+                            Fast online booking<br />
+                            Instant confirmation without phone calls or delays.
+                        </p>
+                    </li>
+                    <li class="feature__item flex-2 font-20 white">
+                        Excellent 24/7 service <br />
+                        We ensure your comfort at any hour, every day.
+                    </li>
+                </ul>
+                <button class="btn">ORDER</button>
+            </div>
+
+            <div class="feature__image">
+                <img src="../assets/image/right.jpg" alt="Right building" />
+            </div>
+        </section>
+
+        <section id="books" class="form fade-in-section">
+            <div class="container">
+                <div class="form__wrapper flex">
+                    <form class="form__body flex-2" action="">
+                        <p class="form__title font-25-medium">Booking Room</p>
+                        <input
+                            class="form__input font-16"
+                            type="name"
+                            name="name"
+                            placeholder="Name"
+                        />
+                        <input
+                            class="form__input font-16"
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                        />
+                        <p class="form__error"></p>
+                        <div class="form_checkbox-group">
+                            <label class="form__label flex-2" for="checkbox">
+                                <input
+                                    class="form__checkbox"
+                                    type="checkbox"
+                                    name="checkbox"
+                                    id="checkbox"
+                                />
+                                <span class="form__custom-checkbox"></span>
+                                <span class="form__label-text font-16">
+                                    I accept Privacy Policy</span
+                                >
+                            </label>
+                        </div>
+                        <div class="order">
+                            <button
+                                class="btn btn_form font-16 white"
+                                type="button"
+                            >
+                                <span>Booking</span>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="form__image-wrapper">
+                        <img
+                            class="form__image"
+                            src="../assets/image/booking.png"
+                            alt="booking img"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer fade-in-section">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__top flex">
+                        <div class="footer__logo">
+                            <a class="footer__logo-link" href="#">
+                                <img
+                                    class="footer__logo-img logo"
+                                    src="../assets/image/logo.png"
+                                    alt="Grant Hotel Logo"
+                                />
+                            </a>
+                        </div>
+                        <div
+                            class="footer__social flex-2"
+                            id="socialLinks"
+                        ></div>
+                        <div class="footer__order">
+                            <button class="btn" type="button">
+                                <span>Booking</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer__bottom flex">
+                        <div>
+                            <p class="footer__text font-16 white"></p>
+                        </div>
+
+                        <div>
+                            <a class="footer__link font-16 white" href="#"
+                                >Privacy Policy</a
+                            >
+                        </div>
+                        <div>
+                            <a class="footer__link font-16 white" href="#"
+                                >Terms of Use</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="cursor-dot" aria-hidden="true"></div>
+        <div class="cursor-ring" aria-hidden="true"></div>
+
+        <noscript
+            >Please enable JavaScript in your browser to view this site
+            properly!</noscript
+        >
+        <script src="/script/main.js"></script>
+    </body>
+</html>
